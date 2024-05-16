@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My App'),
+        title: Text('My App'),    
       ),
       body: Center(
         child: Column(
@@ -34,6 +34,6 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ); 
   }
 }
