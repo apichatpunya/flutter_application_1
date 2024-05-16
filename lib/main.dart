@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screen/my.dart';
-import 'package:flutter_application_1/screen/my_home_page.dart'; 
+import 'package:flutter_application_1/screen/my_second_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
       title: 'My App',
       theme: ThemeData(
         // กำหนดชุดสีหลักของแอปพลิเคชัน
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 120, 106, 110)),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 120, 106, 110)),
 
         // กำหนดฟอนต์หลักของแอปพลิเคชัน
         fontFamily: 'Roboto',
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             textStyle: TextStyle(fontSize: 18),
             padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
           ),
         ),
 
@@ -45,13 +48,14 @@ class MyApp extends StatelessWidget {
         cardTheme: CardTheme(
           color: Colors.white,
           elevation: 4,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
 
         // ใช้ Material 3
         useMaterial3: true,
       ),
-      home: MyMyhomepage(),
+      home: MysecondPage(),
     );
   }
 }
